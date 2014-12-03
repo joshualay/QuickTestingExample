@@ -12,9 +12,11 @@
 		98301AFD1A2EDB7E008A2A40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98301AFB1A2EDB7E008A2A40 /* Main.storyboard */; };
 		98301AFF1A2EDB7E008A2A40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98301AFE1A2EDB7E008A2A40 /* Images.xcassets */; };
 		98301B021A2EDB7E008A2A40 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98301B001A2EDB7E008A2A40 /* LaunchScreen.xib */; };
-		98301B0E1A2EDB7E008A2A40 /* QuickTestingExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98301B0D1A2EDB7E008A2A40 /* QuickTestingExampleTests.swift */; };
-		98301B351A2EDCAB008A2A40 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98301B2E1A2EDCA2008A2A40 /* Nimble.framework */; };
-		98301B361A2EDCAB008A2A40 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98301B1F1A2EDC99008A2A40 /* Quick.framework */; };
+		98301B381A2EDDAE008A2A40 /* ChildSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98301B371A2EDDAE008A2A40 /* ChildSpec.swift */; };
+		98301B3A1A2EDE3C008A2A40 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98301B391A2EDE3C008A2A40 /* Child.swift */; };
+		98301B3C1A2EDE65008A2A40 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98301B3B1A2EDE65008A2A40 /* Parent.swift */; };
+		98301B3D1A2EE18B008A2A40 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98301B2E1A2EDCA2008A2A40 /* Nimble.framework */; };
+		98301B3E1A2EE18B008A2A40 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98301B1F1A2EDC99008A2A40 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,9 +95,11 @@
 		98301B011A2EDB7E008A2A40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		98301B071A2EDB7E008A2A40 /* QuickTestingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickTestingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98301B0C1A2EDB7E008A2A40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98301B0D1A2EDB7E008A2A40 /* QuickTestingExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTestingExampleTests.swift; sourceTree = "<group>"; };
 		98301B171A2EDC99008A2A40 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		98301B261A2EDCA2008A2A40 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		98301B371A2EDDAE008A2A40 /* ChildSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildSpec.swift; sourceTree = "<group>"; };
+		98301B391A2EDE3C008A2A40 /* Child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		98301B3B1A2EDE65008A2A40 /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98301B351A2EDCAB008A2A40 /* Nimble.framework in Frameworks */,
-				98301B361A2EDCAB008A2A40 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98301B3D1A2EE18B008A2A40 /* Nimble.framework in Frameworks */,
+				98301B3E1A2EE18B008A2A40 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +148,8 @@
 				98301AFB1A2EDB7E008A2A40 /* Main.storyboard */,
 				98301AFE1A2EDB7E008A2A40 /* Images.xcassets */,
 				98301B001A2EDB7E008A2A40 /* LaunchScreen.xib */,
+				98301B391A2EDE3C008A2A40 /* Child.swift */,
+				98301B3B1A2EDE65008A2A40 /* Parent.swift */,
 				98301AF51A2EDB7E008A2A40 /* Supporting Files */,
 			);
 			path = QuickTestingExample;
@@ -162,7 +168,7 @@
 			children = (
 				98301B261A2EDCA2008A2A40 /* Nimble.xcodeproj */,
 				98301B171A2EDC99008A2A40 /* Quick.xcodeproj */,
-				98301B0D1A2EDB7E008A2A40 /* QuickTestingExampleTests.swift */,
+				98301B371A2EDDAE008A2A40 /* ChildSpec.swift */,
 				98301B0B1A2EDB7E008A2A40 /* Supporting Files */,
 			);
 			path = QuickTestingExampleTests;
@@ -367,7 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				98301AFA1A2EDB7E008A2A40 /* ViewController.swift in Sources */,
+				98301B3C1A2EDE65008A2A40 /* Parent.swift in Sources */,
 				98301AF81A2EDB7E008A2A40 /* AppDelegate.swift in Sources */,
+				98301B3A1A2EDE3C008A2A40 /* Child.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98301B0E1A2EDB7E008A2A40 /* QuickTestingExampleTests.swift in Sources */,
+				98301B381A2EDDAE008A2A40 /* ChildSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -521,6 +530,7 @@
 				INFOPLIST_FILE = QuickTestingExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickTestingExample.app/QuickTestingExample";
 			};
 			name = Debug;
@@ -529,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
